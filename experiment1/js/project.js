@@ -45,7 +45,7 @@ function main() {
     expression:["And Voilà", "There we go", "Good Job", "EYOO", "Poggers", "Yay", "Horray", "👏", "🎉", "Boom"]
   };
   
-  let protein = "";
+  //let protein = "";
   
   const template = 
   `Let's make some "authentic" Fantasy $nation cuisine!\n
@@ -67,9 +67,11 @@ function main() {
   ⭐ It is recommended to pair this $adj meal with $drink. ⭐
   `;
   
+  //fill the array for the "number" fillers with random numbers 
   for (let i = 1; i <= 10; i += 1) {
       fillers["number"].push(Math.floor(Math.random() * (50 - 1) + 1));
   }
+  //same as above, just a more limited range
   for (let i = 1; i <= 10; i += 1) {
       fillers["smallnumber"].push(Math.floor(Math.random() * (10 - 1) + 2));
   }
