@@ -48,22 +48,22 @@ function main() {
   let protein = "";
   
   const template = 
-  `Let's make some "authentic" Fantasy $nation cuisine!
-  
-  Today we will be making some $adj $protein sandwiches with a side of $greens salad.
-  
-  Difficulty: $diff | Prep Time: $number $time | Cook Time: $number $time
-  
-  1. Start by taking a loaf of $bread bread and slice it in half.
-  3. Place both halves into $appliance and cook until they are a little crispy.
-  2. Next, $chop your protein of choice using $utensil and spread it $spread your bread.
-  3. Sprinkle some $spice (about $smallnumber $measure) and $spice (about $smallnumber $measure) onto your sandwich.
-  4. Finally take about $smallnumber $measure $sauces and spread it $spread your sandwich.
-  5. $expression! Your sandwich is complete!
-  6. Its salad time! Take a large bowl and fill it with the veggie mentioned above.
-  7. Mix some $sauces sauce into the bowl and mix well using $utensil.
-  8. Top off your salad with some $spice. And done!
-  
+  `Let's make some "authentic" Fantasy $nation cuisine!\n
+  \n
+  Today we will be making some $adj $protein sandwiches with a side of $greens salad.\n
+  \n
+  Difficulty: $diff | Prep Time: $number $time | Cook Time: $number $time\n
+  \n
+  1. Start by taking a loaf of $bread bread and slice it in half.\n
+  3. Place both halves into $appliance and cook until they are a little crispy.\n
+  2. Next, $chop your protein of choice using $utensil and spread it $spread your bread.\n
+  3. Sprinkle some $spice (about $smallnumber $measure) and $spice (about $smallnumber $measure) onto your sandwich.\n
+  4. Finally take about $smallnumber $measure $sauces and spread it $spread your sandwich.\n
+  5. $expression! Your sandwich is complete!\n
+  6. Its salad time! Take a large bowl and fill it with the veggie mentioned above.\n
+  7. Mix some $sauces sauce into the bowl and mix well using $utensil.\n
+  8. Top off your salad with some $spice. And done!\n
+  \n
   ⭐ It is recommended to pair this $adj meal with $drink. ⭐
   `;
   
