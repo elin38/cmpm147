@@ -49,6 +49,7 @@ function main() {
   
   const template = 
   `Let's make some "authentic" Fantasy $nation cuisine!\n
+  <br>
   \n
   Today we will be making some $adj $protein sandwiches with a side of $greens salad.\n
   \n
