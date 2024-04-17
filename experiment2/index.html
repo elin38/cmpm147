@@ -60,20 +60,33 @@
 			</div>
 
 			
-
+			
 			<div class="minor-section">
 				<h2>Description</h2>
-				<p>What are you trying to acomplish with this experiment?</p>
+				<p>This project offers a generative, living impression of this inspiring image:</p>
+				<div class="image-wrapper">
+					<img src="img/mountfuji.png">
+				</div>
 			</div>
 
 			<div class="minor-section">
 				<h2>Technical</h2>
-				<p>Describe in detail what you did technically and how it works?</p>
+				<p>Above is a picture of Mt. Fuji in Japan. The background consists of a mountain range along with a river and a tree in the foreground.
+
+					<p> Relation to inspring image:</p>
+					<ul>
+					<li>Color: The sky, grass, tree, and stone colors were sampled from the inspiring image using Paint 3D eyedropper tool.</li>
+					<li>Primitives: The trees are rendered with rectangle primitives as the trunks andcircle/ellipsis for the leaves. Additionally, clouds were generated with ellipsis.</li>
+					<li>Polygons: The background mountain is a single randomly generated polygon using vertex calls. The river makes use of two Bezier Vertexes(one for the river, and one for the land).</li>
+					<li>Composition: Different random seed values lead to differently shaped mountains, differently positioned trees, differently shaped rivers, and varied clouds.</li>
+					<li>Life: Slow and meandering clouds with varying speeds and sizes simulate the passage of time. Also, falling cherry blossoms from a tree hint at the presence of gravity.</li>
+				</ul>
+				</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Reflection</h2>
-				<p>Each person that worked on the code should reflect on the process, the difficulties, and the successes of the experiment.</p>
+				<p>This experiment taught me a lot about p5.js, especially regarding things related to drawing and shape creation. Additionally, I learned a lot about how to use LLMs, such as chatGPT as a tool when programming. I also experienced firsthand how difficult it is to make a program work across multiple platforms and dimensions (mainly regarding the canvas size and color). Also, while I am starting to slowly grasp how to use js and html in tandem, it is clear that I am still learning.</p>
 			</div>
 
 		</section>
