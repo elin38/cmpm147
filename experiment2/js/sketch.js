@@ -10,10 +10,9 @@
 let seed = 239;
 
 const grassColor = "#588a04";
-const skyColor = "#d8e9f9";
+const skyColor = "#87CEEB";
 const stoneColor = "#858290";
-const leafColor = "#c69295";
-const riverColor = "#ffb7c5";
+const riverColor = "#3c709e";
 const snowColor = "#d9f1ff"
 const barkColor = "#443d30";
 const cloudColor = "#e7eff6"
@@ -101,7 +100,7 @@ function draw() {
     rect(treeStartx, treeStarty, width*0.0125, height*0.35);
     //draw leaves
     for (let i = 0; i < random(width*0.05,width*0.1); i++) {
-      fill(198, 146, 149, random(63, 255));
+      fill(255, 183, 197, random(63, 255));
       let angle = random(TWO_PI);
       let leafx = treeStartx + cos(angle) * random(width*0.1125);
       let leafy = treeStarty + sin(angle) * random(height*0.15);
