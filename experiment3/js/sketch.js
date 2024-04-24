@@ -51,29 +51,81 @@ function setup() {
   resizeScreen();
 }
 
-// draw() function is called repeatedly, it's the main animation loop
+/* exported preload, setup, draw, placeTile */
+
+/* global generateGrid drawGrid */
+
+let seed = 0;
+let tilesetImage;
+let currentGrid = [];
+let numRows, numCols;
+
+function preload() {
+  tilesetImage = loadImage(
+    "https://cdn.glitch.com/25101045-29e2-407a-894c-e0243cd8c7c6%2FtilesetP8.png?v=1611654020438"
+  );
+}
+
+function reseed() {
+  seed = (seed | 0) + 1109;
+  randomSeed(seed);
+  noiseSeed(seed);
+  select("#seedReport").html("seed " + seed);
+  regenerateGrid();
+}
+
+function regenerateGrid() {
+  select("#asciiBox").value(gridToString(generateGrid(numCols, numRows)));
+  reparseGrid();
+}
+
+function reparseGrid() {
+  currentGrid = stringToGrid(select("#asciiBox").value());
+}
+
+function gridToString(grid) {
+  let rows = [];
+  for (let i = 0; i < grid.length; i++) {
+    rows.push(grid[i].join(""));
+  }
+  return rows.join("\n");
+}
+
+function stringToGrid(str) {
+  let grid = [];
+  let lines = str.split("\n");
+  for (let i = 0; i < lines.length; i++) {
+    let row = [];
+    let chars = lines[i].split("");
+    for (let j = 0; j < chars.length; j++) {
+      row.push(chars[j]);
+    }
+    grid.push(row);
+  }
+  return grid;
+}
+
+function setup() {
+  numCols = select("#asciiBox").attribute("rows") | 0;
+  numRows = select("#asciiBox").attribute("cols") | 0;
+
+  createCanvas(16 * numCols, 16 * numRows).parent("canvasContainer");
+  select("canvas").elt.getContext("2d").imageSmoothingEnabled = false;
+
+  select("#reseedButton").mousePressed(reseed);
+  select("#asciiBox").input(reparseGrid);
+
+  reseed();
+}
+
+
 function draw() {
-  background(220);    
-  // call a method on the instance
-  myInstance.myMethod();
-
-  // Set up rotation for the rectangle
-  push(); // Save the current drawing context
-  translate(centerHorz, centerVert); // Move the origin to the rectangle's center
-  rotate(frameCount / 100.0); // Rotate by frameCount to animate the rotation
-  fill(234, 31, 81);
-  noStroke();
-  rect(-125, -125, 250, 250); // Draw the rectangle centered on the new origin
-  pop(); // Restore the original drawing context
-
-  // The text is not affected by the translate and rotate
-  fill(255);
-  textStyle(BOLD);
-  textSize(140);
-  text("p5*", centerHorz - 105, centerVert + 40);
+  randomSeed(seed);
+  drawGrid(currentGrid);
 }
 
-// mousePressed() function is called once after every time a mouse button is pressed
-function mousePressed() {
-    // code to run when mouse is pressed
+function placeTile(i, j, ti, tj) {
+  image(tilesetImage, 16 * j, 16 * i, 16, 16, 8 * ti, 8 * tj, 8, 8);
 }
+
+
