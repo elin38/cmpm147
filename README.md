@@ -38,11 +38,17 @@ The reflection portion of each lab will be an important part of the assignment w
 
 ## About Experiment 3: Alternate Worlds
 Below are the 2 worlds created as part of experiment 3.
-[Overworld Glitch Project](https://plains-biome-tilemap.glitch.me)
-[Dungeon Glitch Project](https://purple-tilemap-dungeon.glitch.me)
+- [Overworld Glitch Project](https://plains-biome-tilemap.glitch.me)
+- [Dungeon Glitch Project](https://purple-tilemap-dungeon.glitch.me)
 ### Overworld
-This autotile map features a grassy plains biome in conjucntion with water.
-The land/plains/grass is represented as "?" and the water as "O".
+This autotile map features a grassy plains biome in conjucntion with water.\
+The land/plains/grass is represented as "?" and the water as "O".\
+Some life-like features include:
+* animated water
+* moving clouds textured with noise
+
 ### Dungeon
-There are 2 rooms in this dungeon connected via a tunnel/passage way. The rooms are represented as: "?" and ":".
-The tunnels are represented as "|" and "_".
+There are 2 rooms in this dungeon connected via a tunnel/passage way. The rooms are represented as: "?" and ":".\
+The tunnels are represented as "|" and "_".\
+Some life-like features include:
+* moving ghost textured with noise
