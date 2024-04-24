@@ -155,3 +155,4 @@ Here is the basic structure with stub or empty files in place.
 │   └── index.html
 └── README.md
 ```
+## About Experiment 3: Alternate Worlds
