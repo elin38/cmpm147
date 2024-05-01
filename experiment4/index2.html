@@ -50,18 +50,17 @@
 			</div>
 			<div class="minor-section">
 				<h2>Description</h2>
-				<p>What are you trying to acomplish with this experiment?
-					<br>
-					lorem ipsum
+				<p>My goal with this experiment was to try and simulate water and "move" an object. Thus, in this experiment, we have Jesus, because he can walk on water, who is able to move one tile at a time depending on where the user clicks. Side note - The Jesus character is based on the statue in Rio:
 				</p>
+				<img
+					src="./img/jesus.jpg"
+				  />
 			</div>
 
 			<div class="minor-section">
 				<br>
 				<h2>Technical</h2>
-				<p>Describe in detail what you did technically and how it works?
-				<br>
-				lorem ipsum
+				<p>On the technical side, we store Jesus' location inside of an array. Initially, he starts on the (0, 0) tile. When the player wants to move him, they click on a tile and we run a check to make sure that it is within a 1 tile radius. If it is, we move Jesus' location and re-draw him. During his move, we also translate the tile he walks upon up and down. This simulates a water ripple. Additionally, we populate the map with fish and boats. For the fish, we also store their tile locations in an array so that we may compare them to Jesus' location to determine if he has touched them. Finally, by using a scaled millis() and a translation of every tile, we made it look as if the sea is rocking up and down due to waves. This was inspired by the slides as well as the class Discord.
 				</p>
 			</div>
 
@@ -69,8 +68,7 @@
 				<br>
 				<h2>Reflection</h2>
 				<p>
-					lorem ipsum
-					<br>
+					I am especially proud of how the character movement came out. It was a simple implimentation, but it works very well. Additionally, the way the location is stored allows for easy debugging and additional features (such as the fish collection). Also, while I am not the greatest artist, I think my fish and boats came out well as they share a similar vibe. If I had more time or motivation, I believe it would be possible to make the waves or ripple a little more realistic since they currently just move as one.
 				</p>
 			</div>
 
@@ -78,13 +76,24 @@
 				<br />
 				<h2>Statement</h2>
 				<p>
-				  <br />
-				  lorem ipsum
-				  <br>
-				  <!-- <img
-					src="https://cdn.glitch.global/6ce87986-f794-486c-9684-87c9c41fd3ed/WaldoImage.jpg?v=1714333862388"
-				  /> -->
-				  <!-- [source](https://www.penguinrandomhouse.com/books/74626/wheres-waldo-the-fantastic-journey-by-martin-handford-illustrated-by-martin-handford/) -->
+					Infinity
+					<br>
+					The world goes on for every in every 2-D direction. See this by using the arrow keys.
+				</p>
+				<p>
+					Variation in Space
+					<br>
+					As the player explores the space, they will notive fishes and boats.
+				</p>
+				<p>
+					Variations in Key
+					<br>
+					For each iteration, there will be a slightly different water gradient as well as spots of turquoise meant to represent algae.
+				</p>
+				<p>
+					Signs of Life
+					<br>
+					Players are able to move a character using their mouse. When the character moves they create a ripple. Addionally, the player is able to collect fish by walking over them (a counter keeps track). Waves are perpetualy moving up and down.
 				</p>
 			  </div>
 
