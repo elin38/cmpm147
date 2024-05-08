@@ -95,30 +95,36 @@
 
 			<div class="minor-section">
 				<h2>Description</h2>
-				<p>This project offers a generative, living impression of this inspiring image:</p>
+				<p>In this programming experiment, we're building a generator that takes an image and reimagines it using shapes such as squares, triangles, and circles. Furthermore, we automatically cycle through multiple permutations of this generated image, which are then evaluated and scored. Below are the 4 images that were used to generated the "Evolutionary Impressions".</p>
 				<div class="image-wrapper">
-					<img src="../img/mountfuji.png">
+					<img src="https://cdn.glitch.global/4099c032-48d1-4e4a-bd1b-874dd98d3656/lilypad.jpg?v=1715133527058">
+					<img src="https://cdn.glitch.global/4099c032-48d1-4e4a-bd1b-874dd98d3656/endwalker.png?v=1715135253734">
+					<img src="https://cdn.glitch.global/4099c032-48d1-4e4a-bd1b-874dd98d3656/IMG_1132%20(3).jpg?v=1715139932079">
+					<img src="https://cdn.glitch.global/4099c032-48d1-4e4a-bd1b-874dd98d3656/this-is-fine%20%5BMConverter.eu%5D%20(1).png?v=1715140075113">
 				</div>
+				<p>
+					First Image: <a href="https://www.metmuseum.org/art/collection/search/437127">Bridge over a Pond of Water Lilies by Claude Monet</a>
+					Second Image: <a href="https://www.reddit.com/r/ffxiv/comments/rjag2j/endwalker_credits_wallpaper_shot_4k/">Endwalker Credits Art by SquareEnix</a>
+					Third Image: <a href="https://www.metmuseum.org/art/collection/search/437127">Japanese Breakfast picture taken by Ethan Lin</a>
+					Fourth Image: <a href="https://www.cbr.com/this-is-fine-meme-cartoonist-celebrates-strip-10th-anniversary/">"This is Fine" Meme by KC Green</a>
+				</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Technical</h2>
-				<p>Above is a picture of Mt. Fuji in Japan. The background consists of a mountain range along with a river and a tree in the foreground.
-
-					<p> Relation to inspring image:</p>
-					<ul>
-					<li>Color: The sky, grass, tree, and stone colors were sampled from the inspiring image using Paint 3D eyedropper tool.</li>
-					<li>Primitives: The trees are rendered with rectangle primitives as the trunks andcircle/ellipsis for the leaves. Additionally, clouds were generated with ellipsis.</li>
-					<li>Polygons: The background mountain is a single randomly generated polygon using vertex calls. The river makes use of two Bezier Vertexes(one for the river, and one for the land).</li>
-					<li>Composition: Different random seed values lead to differently shaped mountains, differently positioned trees, differently shaped rivers, and varied clouds.</li>
-					<li>Life: Slow and meandering clouds with varying speeds and sizes simulate the passage of time. Also, falling cherry blossoms from a tree hint at the presence of gravity.</li>
+				<ul>
+					<li>Using the drop-down menu, we are able to switch between our inspiring images.</li>
+					<li>Shapes are generated depending on the images' "Shape Tag". The placement of the shapes are randomized and its fill color is picked based on the location color of the original image. The shape sizes are also randomized depending on the "Detail Amount"</li>
+					<li>The "Change Opacity" and "Detail Amount" buttons make use of preset ranges and values to change the fill opacity or change the number of generated shapes respectively.</li>
+					<li>The "Re-Color" button inverts the colors of each shape by subtracting the RGB values from 255.</li>
+					<li>The mutation slider determines the rate at which we make incremental changes to the design. More specifically, the lower the slider is, the more drastic the changes are to the shapes' size and locations.</li>
 				</ul>
 				</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Reflection</h2>
-				<p>This experiment taught me a lot about p5.js, especially regarding things related to drawing and shape creation. Additionally, I learned a lot about how to use LLMs, such as chatGPT as a tool when programming. I also experienced firsthand how difficult it is to make a program work across multiple platforms and dimensions (mainly regarding the canvas size and color). Also, while I am starting to slowly grasp how to use js and html in tandem, it is clear that I am still learning.</p>
+				<p>This experiment was all about understanding what each value and variable did. Many of the innovations and integrations relied heavily on changing certain values and variables. Additionally, this experiment taught me a lot about making code efficient since efficient code would lead to more "fps". Keeping a reasonable amount of fps was the most difficult part of this experiment. There were many times when I wanted to implement or try something new, but since complicated tasks would lower the fps, I had to think of different ways and ideas.</p>
 			</div>
 
 		</section>
